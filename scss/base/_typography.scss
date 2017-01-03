@@ -74,10 +74,6 @@ a {
     text-shadow: none;
   }
 
-  &:hover {
-    color: inherit;
-  }
-
   &::selection {
     text-shadow: 0.03em 0 $selection-color2, -0.03em 0 $selection-color2, 0 0.03em $selection-color2, 0 -0.03em $selection-color2, 0.06em 0 $selection-color2, -0.06em 0 $selection-color2, 0.09em 0 $selection-color2, -0.09em 0 $selection-color2, 0.12em 0 $selection-color2, -0.12em 0 $selection-color2, 0.15em 0 $selection-color2, -0.15em 0 $selection-color2;
   }
