@@ -4,13 +4,18 @@ section {
 
 .hero {
   a {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    letter-spacing: -0.5px;
     font-weight: 600;
     font-size: 1rem;
   }
 }
 
 .faq {
+  a {
+    color: $black;
+  }
+
   p:first-child {
     margin-top: 0;
   }
