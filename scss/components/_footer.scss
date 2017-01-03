@@ -1,0 +1,27 @@
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+  padding-left: 0;
+  border-top: 1px solid lighten($grey, 10);
+  color: $grey;
+  // margin-left: $toast-gutter-width;
+  font-size: 0.888rem;
+
+  p {
+    display: inline-block;
+    margin: 0;
+    color: $grey;
+  }
+}
+
+.footer-links {
+  display: inline-block;
+
+  a {
+    margin-left: 0.5rem;
+    color: $grey;
+  }
+}
