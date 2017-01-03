@@ -2,11 +2,11 @@
   "name": "dawn-site",
   "version": "1.0.0",
   "scripts": {
-    "develop": "concurrently --kill-others \"npm run sass-watch\" \"npm run serve\"",
-    "deploy": "npm run sass && gh-pages -d . -v node_modules",
+    "develop": "concurrently --kill-others \"npm run sass-dev\" \"npm run serve\"",
+    "deploy": "npm run sass-prod && mkdir -p dist && cp -r fonts images styles index.html dist && gh-pages -d dist && rm -rf dist",
     "serve": "live-server .",
-    "sass": "./node_modules/node-sass/bin/node-sass scss --output styles --output-style compressed",
-    "sass-watch": "./node_modules/node-sass/bin/node-sass scss --output styles --output-style compressed --watch --source-map true"
+    "sass-prod": "./node_modules/node-sass/bin/node-sass scss --output styles --output-style compressed",
+    "sass-dev": "./node_modules/node-sass/bin/node-sass scss --output styles --output-style compressed --watch --source-map true"
   },
   "repository": {
     "type": "git",
